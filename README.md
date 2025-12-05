@@ -1,6 +1,6 @@
 # 🌸 FAQ Legacy – Une Expérience Moderne construite avec une Technologie Vintage
 
-> Ce projet s'inscrit dans le cadre de la Nuit de l'Info 2025 et relève un défi rare : concevoir une page web qui semble créée en 2025, mais réalisée avec les technologies du milieu des années 2000. Le résultat est une page FAQ indistinguable d'un site moderne, parfaitement responsive, élégante, fluide et interactive, pourtant construite sans CSS3, sans frameworks, et sans outils modernes.
+Ce projet s'inscrit dans le cadre de la Nuit de l'Info 2025 et relève un défi rare : concevoir une page web qui semble créée en 2025, mais réalisée avec les technologies du milieu des années 2000. Le résultat est une page FAQ indistinguable d'un site moderne, parfaitement responsive, élégante, fluide et interactive, pourtant construite sans CSS3, sans frameworks, et sans outils modernes.
 
 C'est un véritable exercice d'ingénierie créative où chaque composant a été réinventé sous contrainte, démontrant qu'un design réfléchi peut transcender la technologie à disposition.
 
@@ -106,8 +106,6 @@ Des micro-infobulles enrichissent l'expérience :
 - Positionnement dynamique
 - Texte pédagogique contextuel
 
-> **🐞 Correction d'un bug notable** : Une infobulle sur « Le village numérique résistant » ne s'affichait pas. Nous avons identifié que le problème venait d'un attribut `data-tooltip` manquant, démontrant notre capacité de débogage, notre rigueur, et notre maîtrise du système d'infobulles custom.
-
 ### 6. 🔍 Mini Simulateur de Diagnostic d'Appareil (sans backend)
 
 Un mini-assistant façon "IA embarquée" :
@@ -138,7 +136,6 @@ Augmenter la zone tactile
 
 Agrandir la police et l’espacement uniquement en mobile
 
-Surligner l’option active
 
 Résultat :
 Une interaction moderne sans toucher au bouton radio, totalement conforme aux limites technologiques.
