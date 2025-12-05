@@ -156,6 +156,37 @@ a:hover {
 	font-weight: 400;
 }
 
+#faq-progress {
+	margin: 0 auto 20px auto;
+	text-align: center;
+	font-family: 'Lexend', Arial, sans-serif;
+}
+
+#faq-progress-text {
+	font-size: 14px;
+	color: #2a1422;
+	margin: 0 0 4px 0;
+}
+
+#faq-progress-count {
+	font-weight: bold;
+	color: #f463b5;
+}
+
+#faq-progress-hint {
+	font-size: 13px;
+	color: #6a4f5e;
+	margin: 0;
+}
+
+#faq-progress.faq-progress-complete #faq-progress-text {
+	color: #2a7a3b;
+}
+
+#faq-progress.faq-progress-complete #faq-progress-hint {
+	color: #2a7a3b;
+}
+
 .faq-item {
 	width: 100%;
 	margin: 18px auto 18px auto;
@@ -293,15 +324,18 @@ a:hover {
 /* 5. TABS HELP SECTION */
 
 #tabs-help-section {
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-top: 24px;
+	padding-bottom: 24px;
 	background-color: #f8eff6;
 }
 
-#tabs-help-section .content-container {
-	width: 900px;
+#tabs-help-section .content-container,
+#device-check-section .content-container {
+	max-width: 760px;
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 18px 22px;
+	background-color: #fdeffd;
+	border: 1px solid #f4c5e5;
 	text-align: center;
 }
 
@@ -316,7 +350,7 @@ a:hover {
 
 #tabs-help-section .tabs-title {
 	font-family: 'Elsie', serif;
-	font-size: 32px;
+	font-size: 26px;
 	margin: 0 0 24px 0;
 	color: #2a1422;
 	font-weight: 400;
@@ -324,7 +358,7 @@ a:hover {
 
 #help-tabs-nav {
 	list-style: none;
-	margin: 0 0 20px 0;
+	margin: 10px 0 12px 0;
 	padding: 0;
 	text-align: center;
 }
@@ -360,7 +394,7 @@ a:hover {
 .help-tab-panel {
 	display: none;
 	max-width: 720px;
-	margin: 0 auto;
+	margin: 8px auto 0 auto;
 	text-align: left;
 	font-size: 15px;
 	line-height: 1.6;
@@ -488,6 +522,24 @@ a:hover {
 	padding: 0 20px;
 }
 
+.footer-logo {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.footer-logo-img {
+	max-width: 80px;
+	height: auto;
+	display: block;
+	margin: 0 auto 12px auto;
+	opacity: 0.85;
+	transition: opacity 0.3s ease;
+}
+
+.footer-logo-img:hover {
+	opacity: 1;
+}
+
 .footer-top {
 	margin-bottom: 20px;
 }
@@ -517,5 +569,465 @@ a:hover {
 #site-footer a:hover {
 	color: #f463b5;
 	text-decoration: underline;
+}
+
+
+/* 8. TOOLTIP HELPER */
+
+.has-tooltip {
+	border-bottom: 2px dashed #f463b5;
+	cursor: help;
+	position: relative;
+}
+
+.has-tooltip:hover {
+	background-color: #ffe8f6;
+}
+
+.tooltip-hint {
+	font-size: 11px;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #f463b5;
+	padding: 0px 4px;
+	margin-left: 2px;
+	line-height: 1.1;
+	display: inline-block;
+}
+
+.tooltip-helper {
+	position: absolute;
+	max-width: 260px;
+	background-color: #1a0d16;
+	color: #ffffff;
+	font-size: 13px;
+	line-height: 1.5;
+	padding: 12px 14px;
+	z-index: 9999;
+	text-align: left;
+	font-family: 'Lexend', Arial, sans-serif;
+}
+
+
+/* 9. DEVICE CHECK SECTION */
+
+#device-check-section {
+	padding-top: 24px;
+	padding-bottom: 32px;
+	text-align: center;
+}
+
+.device-intro-label {
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #f463b5;
+	margin-bottom: 4px;
+}
+
+.device-title {
+	font-family: 'Elsie', serif;
+	font-size: 26px;
+	margin: 0 0 10px 0;
+}
+
+.device-subtitle {
+	font-family: 'Lexend', Arial, sans-serif;
+	font-size: 15px;
+	margin: 0 0 20px 0;
+}
+
+#device-check-form {
+	max-width: 720px;
+	margin: 0 auto 20px auto;
+	text-align: left;
+	font-family: 'Lexend', Arial, sans-serif;
+	font-size: 14px;
+}
+
+.device-question {
+	margin-bottom: 18px;
+}
+
+.device-question p {
+	margin: 0 0 6px 0;
+}
+
+.device-question label {
+	margin-right: 12px;
+}
+
+.device-actions {
+	text-align: center;
+	margin-top: 16px;
+}
+
+#device-check-button {
+	background-color: #f463b5;
+	color: #ffffff;
+	font-family: 'Lexend', Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 10px 24px;
+	border: none;
+	cursor: pointer;
+}
+
+#device-check-button:hover {
+	background-color: #d74e9c;
+}
+
+#device-result {
+	max-width: 720px;
+	margin: 10px auto 0 auto;
+	text-align: left;
+	font-family: 'Lexend', Arial, sans-serif;
+}
+
+#device-result-title {
+	font-weight: bold;
+	margin: 0 0 4px 0;
+}
+
+#device-result-details {
+	margin: 0;
+}
+
+
+/* 10. SECTION DIVIDER */
+
+.section-divider {
+	border-top: 1px solid #e4d3e8;
+	width: 80%;
+	margin: 24px auto;
+}
+
+
+/* 11. RESPONSIVE DESIGN (TABLET & MOBILE) */
+
+/* ──────────────────────────────────────────────────────────── */
+/* HERO SECTION: GIF + CAPTION RESPONSIVE */
+/* ──────────────────────────────────────────────────────────── */
+
+/* TABLET: slightly smaller caption, controlled spacing */
+#page-wrapper.layout-tablet .hero-gif {
+	max-width: 80%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+#page-wrapper.layout-tablet .hero-gif-caption {
+	font-size: 14px;
+	line-height: 1.4;
+	max-width: 80%;
+	margin: 8px auto 0 auto;
+}
+
+/* MOBILE: GIF full width, caption smaller + tighter */
+#page-wrapper.layout-mobile .hero-gif {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+#page-wrapper.layout-mobile .hero-gif-caption {
+	font-size: 13px;
+	line-height: 1.3;
+	max-width: 90%;
+	margin: 6px auto 0 auto;
+	text-align: center;
+}
+
+/* ──────────────────────────────────────────────────────────── */
+/* DEVICE CHECK SECTION: RESPONSIVE LAYOUT */
+/* ──────────────────────────────────────────────────────────── */
+
+/* TABLET adjustments */
+#page-wrapper.layout-tablet #device-check-form {
+	max-width: 90%;
+	margin: 0 auto 16px auto;
+	font-size: 14px;
+}
+
+#page-wrapper.layout-tablet .device-question {
+	margin-bottom: 14px;
+}
+
+#page-wrapper.layout-tablet .device-question label {
+	display: inline-block;
+	margin-right: 10px;
+	margin-bottom: 4px;
+}
+
+#page-wrapper.layout-tablet #device-check-button {
+	padding: 10px 28px;
+	font-size: 14px;
+}
+
+/* MOBILE adjustments */
+#page-wrapper.layout-mobile #device-check-form {
+	max-width: 94%;
+	margin: 0 auto 14px auto;
+	font-size: 13px;
+}
+
+#page-wrapper.layout-mobile .device-question {
+	margin-bottom: 12px;
+}
+
+/* Stack labels vertically on mobile for easier tapping */
+#page-wrapper.layout-mobile .device-question label {
+	display: block;
+	margin-bottom: 4px;
+}
+
+/* Full-width style button on mobile */
+#page-wrapper.layout-mobile #device-check-button {
+	display: block;
+	width: 100%;
+	padding: 12px 0;
+	font-size: 15px;
+}
+
+/* Result box spacing on smaller screens */
+#page-wrapper.layout-mobile #device-result,
+#page-wrapper.layout-tablet #device-result {
+	max-width: 94%;
+	margin: 8px auto 0 auto;
+}
+
+
+/* ──────────────────────────────────────────────────────────── */
+/* BUTTONS: MOBILE & TABLET IMPROVEMENTS */
+/* ──────────────────────────────────────────────────────────── */
+
+/* MOBILE: Full-width, taller buttons with larger text */
+#page-wrapper.layout-mobile .hero-button,
+#page-wrapper.layout-mobile #device-check-button,
+#page-wrapper.layout-mobile .cta-button {
+	display: block;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 15px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+/* TABLET: Slightly wider and taller buttons */
+#page-wrapper.layout-tablet .hero-button,
+#page-wrapper.layout-tablet #device-check-button,
+#page-wrapper.layout-tablet .cta-button {
+	font-size: 14px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+/* ──────────────────────────────────────────────────────────── */
+/* RADIO BUTTONS & LABELS: MOBILE & TABLET IMPROVEMENTS */
+/* ──────────────────────────────────────────────────────────── */
+
+/* DESKTOP: Default radio option styling */
+.radio-option {
+	margin-bottom: 8px;
+}
+
+.radio-option label {
+	display: inline-block;
+	margin-right: 12px;
+}
+
+.radio-option input[type="radio"] {
+	cursor: pointer;
+}
+
+/* MOBILE: AGGRESSIVE SCALING - Much larger for better usability */
+#page-wrapper.layout-mobile #device-check-section {
+	padding-top: 20px;
+	padding-bottom: 24px;
+}
+
+#page-wrapper.layout-mobile .device-question {
+	margin-bottom: 32px;
+}
+
+#page-wrapper.layout-mobile .device-question p {
+	font-size: 22px;
+	margin-bottom: 18px;
+	font-weight: 700;
+	line-height: 1.4;
+}
+
+/* Mobile: Make entire radio option tappable like a button */
+#page-wrapper.layout-mobile .radio-option {
+	padding: 10px;
+	border: 1px solid #f0c0e0;
+	margin-bottom: 10px;
+	background: #faf1f7;
+	display: block;
+	text-align: center;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+}
+
+#page-wrapper.layout-mobile .radio-option:hover {
+	background-color: #f2d8ea;
+}
+
+#page-wrapper.layout-mobile .radio-option:active {
+	background-color: #f2d8ea;
+}
+
+#page-wrapper.layout-mobile .radio-option label {
+	display: block;
+	font-size: 16px;
+	margin: 0;
+	cursor: pointer;
+	font-weight: 500;
+}
+
+#page-wrapper.layout-mobile .radio-option input[type="radio"] {
+	width: 28px;
+	height: 28px;
+	margin-right: 12px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+#page-wrapper.layout-mobile #device-check-form {
+	max-width: 98%;
+	margin: 0 auto 20px auto;
+	font-size: 18px;
+}
+
+#page-wrapper.layout-mobile .device-subtitle {
+	font-size: 18px;
+	margin-bottom: 24px;
+	line-height: 1.5;
+}
+
+#page-wrapper.layout-mobile .device-title {
+	font-size: 28px;
+	margin-bottom: 16px;
+	font-weight: 600;
+}
+
+#page-wrapper.layout-mobile .device-intro-label {
+	font-size: 15px;
+	margin-bottom: 8px;
+}
+
+/* TABLET: Slightly improved spacing */
+#page-wrapper.layout-tablet .device-question label {
+	display: inline-block;
+	margin-right: 12px;
+	margin-bottom: 6px;
+	font-size: 14px;
+	padding: 2px 0;
+}
+
+#page-wrapper.layout-tablet .device-question input[type="radio"] {
+	width: 13px;
+	height: 13px;
+	margin-right: 3px;
+}
+
+
+/* ──────────────────────────────────────────────────────────── */
+/* SPACING REDUCTIONS: MOBILE & TABLET */
+/* ──────────────────────────────────────────────────────────── */
+
+/* MOBILE: Reduce excessive vertical padding */
+#page-wrapper.layout-mobile #hero-section {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#page-wrapper.layout-mobile #faq-section {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#page-wrapper.layout-mobile #tabs-help-section {
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+
+#page-wrapper.layout-mobile #device-check-section {
+	padding-top: 16px;
+	padding-bottom: 20px;
+}
+
+#page-wrapper.layout-mobile #cta-section {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#page-wrapper.layout-mobile .section-divider {
+	margin: 16px auto;
+}
+
+/* MOBILE: Reduce heading margins */
+#page-wrapper.layout-mobile .hero-title,
+#page-wrapper.layout-mobile .faq-title,
+#page-wrapper.layout-mobile .tabs-title,
+#page-wrapper.layout-mobile .device-title {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+#page-wrapper.layout-mobile #faq-progress {
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+/* TABLET: Moderate spacing reductions */
+#page-wrapper.layout-tablet #hero-section {
+	padding-top: 28px;
+	padding-bottom: 28px;
+}
+
+#page-wrapper.layout-tablet #faq-section {
+	padding-top: 28px;
+	padding-bottom: 28px;
+}
+
+#page-wrapper.layout-tablet #tabs-help-section {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#page-wrapper.layout-tablet #device-check-section {
+	padding-top: 20px;
+	padding-bottom: 24px;
+}
+
+#page-wrapper.layout-tablet #cta-section {
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+#page-wrapper.layout-tablet .section-divider {
+	margin: 20px auto;
+}
+
+
+/* ──────────────────────────────────────────────────────────── */
+/* FOOTER: RESPONSIVE LOGO */
+/* ──────────────────────────────────────────────────────────── */
+
+/* TABLET: Small logo */
+#page-wrapper.layout-tablet .footer-logo-img {
+	max-width: 70px;
+	margin: 0 auto 10px auto;
+}
+
+/* MOBILE: Small logo for mobile screens */
+#page-wrapper.layout-mobile .footer-logo-img {
+	max-width: 65px;
+	margin: 0 auto 8px auto;
 }
 

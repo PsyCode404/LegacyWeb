@@ -3,6 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>FAQ – Village numérique résistant</title>
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%23f463b5'>🌐</text></svg>">
 	<link rel="stylesheet" type="text/css" href="legacy-faq.css">
 	
 	<!-- Google Fonts: Elsie (decorative titles) and Lexend (body) -->
@@ -25,10 +26,10 @@
 				<h1 class="hero-title">Vos questions, <span class="hero-title-accent">nos réponses</span></h1>
 				<p class="hero-intro">Trouvez les réponses à vos questions les plus fréquentes sur le village numérique résistant et ses ressources.</p>
 				<div id="hero-gif-wrapper">
-					<img
-						src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdDU1ZXY5N2lrdnl1ZG55NmEwcjA5eGhqYnNyejVza2Vsams4ZTA1YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tIeCLkB8geYtW/giphy.gif"
-						alt="GIF humoristique : mouton qui réfléchit"
-						title="Résistance contre les géants du numérique">
+					<img class="hero-gif"
+					src="http://media.giphy.com/media/tIeCLkB8geYtW/giphy.gif"
+					alt="GIF humoristique : mouton qui réfléchit"
+					title="Résistance contre les géants du numérique">
 					<p class="hero-gif-caption">Quand tu découvres que tu peux résister aux géants du numérique…</p>
 				</div>
 				<a href="#faq-section" class="hero-button">Parcourir la FAQ</a>
@@ -41,6 +42,16 @@
 		<div class="faq-container">
 			<h2 class="faq-title">Questions fréquentes</h2>
 			
+			<!-- FAQ Progress Indicator -->
+			<div id="faq-progress">
+				<p id="faq-progress-text">
+					Vous avez lu <span id="faq-progress-count">0</span> questions sur 5.
+				</p>
+				<p id="faq-progress-hint">
+					💡 Continuez pour mieux comprendre le numérique responsable.
+				</p>
+			</div>
+			
 			<!-- FAQ Item 01 -->
 			<div class="faq-item">
 				<a href="#" class="faq-question">
@@ -49,7 +60,7 @@
 					<span class="faq-toggle-icon">+</span>
 				</a>
 				<div class="faq-answer">
-					<p>Le village numérique résistant utilise des technologies et des pratiques éprouvées pour protéger vos données. Nous privilégions les outils open-source, les serveurs décentralisés, et le chiffrement de bout en bout. Vos données restent sous votre contrôle, et nous ne les partageons jamais avec des tiers sans votre consentement explicite.</p>
+					<p><span class="has-tooltip" tabindex="0" data-tooltip="Un espace d'apprentissage et d'action pour reprendre le contrôle de votre vie numérique face aux géants du web.">Le village numérique résistant <span class="tooltip-hint">?</span></span> utilise des technologies et des pratiques éprouvées pour protéger vos données. Nous privilégions les outils open-source, les serveurs décentralisés, et le chiffrement de bout en bout. Vos données restent sous votre contrôle, et nous ne les partageons jamais avec des tiers sans votre consentement explicite.</p>
 				</div>
 			</div>
 			
@@ -81,7 +92,7 @@
 								title="Pourquoi les logiciels libres ?">
 							</iframe>
 						</div>
-						<p>Les logiciels libres sont au cœur de la résistance numérique. Ils offrent transparence, sécurité, et liberté. Contrairement aux logiciels propriétaires, vous pouvez voir exactement comment ils fonctionnent, les modifier selon vos besoins, et les partager. Cela crée une communauté collaborative plutôt qu'une dépendance à une entreprise.</p>
+						<p>Les <span class="has-tooltip" tabindex="0" data-tooltip="Ces outils te donnent plus de liberté, de transparence et de contrôle sur tes données.">logiciels libres <span class="tooltip-hint">?</span></span> sont au cœur de la résistance numérique. Ils offrent transparence, sécurité, et liberté. Contrairement aux logiciels propriétaires, vous pouvez voir exactement comment ils fonctionnent, les modifier selon vos besoins, et les partager. Cela crée une communauté collaborative plutôt qu'une dépendance à une entreprise.</p>
 					</div>
 				</div>
 			</div>
@@ -94,7 +105,7 @@
 					<span class="faq-toggle-icon">+</span>
 				</a>
 				<div class="faq-answer">
-					<p>La durabilité numérique commence par des choix simples : gardez vos appareils plus longtemps, installez des systèmes d'exploitation légers (comme Linux), utilisez des outils qui consomment moins de ressources, et participez à des ateliers de réparation. En réduisant votre consommation technologique, vous diminuez votre empreinte écologique et votre dépendance aux géants du numérique.</p>
+					<p>La <span class="has-tooltip" tabindex="0" data-tooltip="Réparer, réutiliser et prolonger la vie de ton appareil réduit fortement l'empreinte écologique.">durabilité <span class="tooltip-hint">?</span></span> numérique commence par des choix simples : gardez vos appareils plus longtemps, installez des <span class="has-tooltip" tabindex="0" data-tooltip="Des systèmes comme Linux, conçus pour être plus rapides et fonctionner sur des machines plus anciennes.">systèmes d'exploitation légers (comme Linux) <span class="tooltip-hint">?</span></span>, utilisez des outils qui consomment moins de ressources, et participez à des ateliers de réparation. En réduisant votre consommation technologique, vous diminuez votre empreinte écologique et votre dépendance aux géants du numérique.</p>
 				</div>
 			</div>
 			
@@ -132,11 +143,11 @@
 			</ul>
 
 			<div class="help-tab-panel help-tab-panel-active" id="tab-eleves">
-				<p>Tu veux apprendre, créer et comprendre le numérique sans être espionné ni limité&nbsp;? Le village numérique t'aide à utiliser des outils libres, à protéger ta vie privée et à devenir acteur de tes usages, pas seulement consommateur.</p>
+				<p>Tu veux apprendre, créer et comprendre le numérique sans être espionné ni limité&nbsp;? Le village numérique t'aide à utiliser des <span class="has-tooltip" tabindex="0" data-tooltip="Des applications gratuites, transparentes et contrôlées par la communauté plutôt que par une grande entreprise.">outils libres <span class="tooltip-hint">?</span></span>, à protéger ta vie privée et à devenir acteur de tes usages, pas seulement consommateur.</p>
 			</div>
 
 			<div class="help-tab-panel" id="tab-enseignants">
-				<p>Vous cherchez des outils stables, gratuits et respectueux des données de vos élèves&nbsp;? Le village numérique propose des pistes concrètes pour déployer des logiciels libres, réutiliser le matériel existant et accompagner vos classes vers plus d'autonomie.</p>
+				<p>Vous cherchez des outils stables, gratuits et respectueux des données de vos élèves&nbsp;? Le village numérique propose des pistes concrètes pour déployer des <span class="has-tooltip" tabindex="0" data-tooltip="Des logiciels dont le code est ouvert : vous pouvez les étudier, les modifier et les partager librement.">logiciels libres <span class="tooltip-hint">?</span></span>, réutiliser le matériel existant et accompagner vos classes vers plus d'autonomie.</p>
 			</div>
 
 			<div class="help-tab-panel" id="tab-parents">
@@ -145,11 +156,81 @@
 		</div>
 	</div>
 
+	<!-- Section Divider -->
+	<div class="section-divider"></div>
+
+	<!-- Device Check Section -->
+	<div id="device-check-section">
+		<div class="content-container">
+			<p class="device-intro-label">Passez à l'action</p>
+			<h2 class="device-title">Testez votre appareil</h2>
+			<p class="device-subtitle">
+				Répondez à quelques questions pour savoir si votre ordinateur est prêt pour une deuxième vie.
+			</p>
+
+			<form id="device-check-form" action="#">
+				<div class="device-question">
+					<p>Votre ordinateur a-t-il plus de 5 ans&nbsp;?</p>
+					<div class="radio-option">
+						<label>
+							<input type="radio" name="age" value="oui"> Oui
+						</label>
+					</div>
+					<div class="radio-option">
+						<label>
+							<input type="radio" name="age" value="non"> Non
+						</label>
+					</div>
+				</div>
+
+				<div class="device-question">
+					<p>Votre ordinateur est-il souvent lent (démarrage, applications)&nbsp;?</p>
+					<div class="radio-option">
+						<label>
+							<input type="radio" name="slow" value="oui"> Oui
+						</label>
+					</div>
+					<div class="radio-option">
+						<label>
+							<input type="radio" name="slow" value="non"> Non
+						</label>
+					</div>
+				</div>
+
+				<div class="device-question">
+					<p>La batterie ou l'alimentation pose-t-elle problème (se décharge vite, câble fragile)&nbsp;?</p>
+					<div class="radio-option">
+						<label>
+							<input type="radio" name="battery" value="oui"> Oui
+						</label>
+					</div>
+					<div class="radio-option">
+						<label>
+							<input type="radio" name="battery" value="non"> Non
+						</label>
+					</div>
+				</div>
+
+				<div class="device-actions">
+					<button type="submit" id="device-check-button">Analyser mon appareil</button>
+				</div>
+			</form>
+
+			<div id="device-result" style="display:none;">
+				<p id="device-result-title"></p>
+				<p id="device-result-details"></p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Section Divider -->
+	<div class="section-divider"></div>
+
 	<!-- Call-to-Action Section -->
 	<div id="cta-section">
 		<div class="cta-container">
 			<p class="cta-text">Vous n'avez pas trouvé votre réponse ?</p>
-			<p class="cta-subtitle">Consultez les ressources NIRD ou contactez l'équipe numérique de votre établissement.</p>
+			<p class="cta-subtitle">Consultez les <span class="has-tooltip" tabindex="0" data-tooltip="Guides, exemples et outils pour mettre en place un numérique plus inclusif, responsable et durable.">ressources NIRD <span class="tooltip-hint">?</span></span> ou contactez l'équipe numérique de votre établissement.</p>
 			<a href="https://nird.forge.apps.education.fr/" target="_blank" class="cta-button" title="Voir les ressources NIRD">Voir les ressources NIRD</a>
 		</div>
 	</div>
@@ -157,6 +238,9 @@
 	<!-- Footer -->
 	<div id="site-footer">
 		<div class="footer-container">
+			<div class="footer-logo">
+				<img src="img/logo.png" alt="NIRD – Village numérique de résistance" class="footer-logo-img">
+			</div>
 			<div class="footer-top">
 				<p class="footer-copyright">© 2025 NIRD – Village numérique de résistance</p>
 			</div>
@@ -170,6 +254,9 @@
 	</div>
 
 </div>
+
+<!-- Tooltip Helper -->
+<div id="tooltip-helper" class="tooltip-helper" style="display:none;"></div>
 
 </body>
 </html>
