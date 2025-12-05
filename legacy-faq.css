@@ -1,0 +1,521 @@
+/* ============================================
+   LEGACY FAQ CSS (CSS 2.1 only)
+   HTML 4.01 + CSS 2.1 + jQuery 1.x
+   ============================================ */
+
+/* 1. GLOBAL RESET & BASE */
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #f8eff6;
+	font-family: 'Lexend', Arial, sans-serif;
+	color: #2a1422;
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+a {
+	color: #2a1422;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #f463b5;
+}
+
+#page-wrapper {
+	width: 100%;
+	text-align: center;
+}
+
+.content-container {
+	width: 900px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+/* 3. HERO SECTION */
+
+#hero-section {
+	padding-top: 60px;
+	padding-bottom: 30px;
+	text-align: center;
+	background-color: #f8eff6;
+	margin: 0;
+}
+
+.hero-container {
+	width: 900px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+#faq-hero-inner {
+	width: 800px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.hero-label {
+	font-size: 13px;
+	color: #644c5c;
+	margin: 0 0 8px 0;
+	font-weight: 500;
+	font-family: 'Lexend', Arial, sans-serif;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.hero-title {
+	font-size: 62px;
+	font-weight: 400;
+	margin: 8px 0 16px 0;
+	color: #2a1422;
+	line-height: 1.1;
+	font-family: 'Elsie', serif;
+}
+
+.hero-title-accent {
+	color: #f463b5;
+}
+
+.hero-intro {
+	font-size: 20px;
+	color: #2a1422;
+	margin: 0 0 20px 0;
+	line-height: 1.6;
+	font-family: 'Lexend', Arial, sans-serif;
+}
+
+#hero-gif-wrapper {
+	margin: 16px auto 14px auto;
+	text-align: center;
+}
+
+#hero-gif-wrapper img {
+	max-width: 320px;
+	height: auto;
+	display: block;
+	margin: 0 auto 10px auto;
+}
+
+.hero-gif-caption {
+	font-size: 14px;
+	font-style: italic;
+	color: #6a4f5e;
+	margin: 0;
+	font-family: 'Lexend', Arial, sans-serif;
+}
+
+.hero-button {
+	display: inline-block;
+	background-color: #f463b5;
+	color: #ffffff;
+	padding: 14px 40px;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 16px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	font-family: 'Lexend', Arial, sans-serif;
+	cursor: pointer;
+}
+
+.hero-button:hover {
+	background-color: #d94a9c;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+
+/* 4. FAQ SECTION (Accordion Shell) */
+
+#faq-section {
+	margin-top: 0;
+	padding-top: 80px;
+	padding-bottom: 40px;
+	background-color: #f8eff6;
+}
+
+.faq-container {
+	width: 900px;
+	margin: 0 auto;
+	text-align: left;
+	padding: 0 20px;
+}
+
+#faq-section h2 {
+	font-size: 48px;
+	font-family: 'Elsie', serif;
+	margin-bottom: 50px;
+	margin-top: 0;
+	color: #2a1422;
+	text-align: center;
+	font-weight: 400;
+}
+
+.faq-item {
+	width: 100%;
+	margin: 18px auto 18px auto;
+	border-bottom: 1px solid #ead6e5;
+	text-align: left;
+	padding-bottom: 25px;
+}
+
+.faq-question {
+	display: block;
+	text-decoration: none;
+	color: #2a1422;
+	font-size: 22px;
+	font-family: 'Lexend', Arial, sans-serif;
+	padding: 12px 0;
+	cursor: pointer;
+	font-weight: 600;
+}
+
+.faq-question:hover {
+	color: #f463b5;
+	text-decoration: underline;
+}
+
+.faq-label {
+	color: #f463b5;
+	margin-right: 12px;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+.faq-title-text {
+	display: inline;
+}
+
+.faq-toggle-icon {
+	float: right;
+	font-weight: bold;
+	font-size: 26px;
+	color: #f463b5;
+	line-height: 1;
+}
+
+.faq-answer {
+	margin-top: 15px;
+	font-size: 16px;
+	color: #2a1422;
+	line-height: 1.7;
+	display: none;
+	padding-left: 30px;
+}
+
+.faq-answer p {
+	margin: 0 0 15px 0;
+}
+
+#faq-media {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+#faq-media img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto 10px auto;
+}
+
+.faq-video-block {
+	width: 680px;
+	margin: 10px auto 20px auto;
+	text-align: left;
+}
+
+.faq-video-block .video-wrapper {
+	text-align: center;
+	margin-bottom: 14px;
+}
+
+.faq-video-block .video-wrapper iframe {
+	width: 100%;
+	height: 383px;
+	display: block;
+	border: none;
+}
+
+.faq-video-block p {
+	margin: 0;
+	line-height: 1.6;
+	font-family: 'Lexend', Arial, sans-serif;
+	font-size: 16px;
+	color: #2a1422;
+}
+
+.video-wrapper {
+	width: 100%;
+	text-align: center;
+	margin: 1em 0;
+}
+
+.video-wrapper iframe {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	border: none;
+}
+
+.faq-media-caption {
+	font-size: 13px;
+	color: #6b4f5d;
+	font-style: italic;
+	text-align: center;
+}
+
+/* Accordion open state */
+
+.faq-item.faq-open {
+	border-bottom-color: #f463b5;
+	border-bottom-width: 2px;
+	padding-bottom: 24px;
+}
+
+.faq-item.faq-open .faq-question {
+	color: #f463b5;
+	font-weight: 600;
+}
+
+.faq-item.faq-open .faq-toggle-icon {
+	color: #f463b5;
+	font-weight: 400;
+}
+
+
+/* 5. TABS HELP SECTION */
+
+#tabs-help-section {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #f8eff6;
+}
+
+#tabs-help-section .content-container {
+	width: 900px;
+	margin: 0 auto;
+	padding: 0 20px;
+	text-align: center;
+}
+
+#tabs-help-section .tabs-intro-label {
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #f463b5;
+	margin-bottom: 8px;
+	font-family: 'Lexend', Arial, sans-serif;
+}
+
+#tabs-help-section .tabs-title {
+	font-family: 'Elsie', serif;
+	font-size: 32px;
+	margin: 0 0 24px 0;
+	color: #2a1422;
+	font-weight: 400;
+}
+
+#help-tabs-nav {
+	list-style: none;
+	margin: 0 0 20px 0;
+	padding: 0;
+	text-align: center;
+}
+
+.help-tab-link {
+	display: inline-block;
+	margin: 6px 6px;
+}
+
+.help-tab-link a {
+	font-family: 'Lexend', Arial, sans-serif;
+	font-size: 14px;
+	text-decoration: none;
+	color: #2a1422;
+	padding: 10px 20px;
+	background-color: #f2d8ea;
+	display: inline-block;
+	cursor: pointer;
+	font-weight: 500;
+}
+
+.help-tab-link a:hover {
+	background-color: #f463b5;
+	color: #ffffff;
+}
+
+.help-tab-link.help-tab-active a {
+	background-color: #f463b5;
+	color: #ffffff;
+	font-weight: 600;
+}
+
+.help-tab-panel {
+	display: none;
+	max-width: 720px;
+	margin: 0 auto;
+	text-align: left;
+	font-size: 15px;
+	line-height: 1.6;
+	font-family: 'Lexend', Arial, sans-serif;
+	color: #2a1422;
+	padding: 20px;
+	background-color: #ffffff;
+	border: 1px solid #ead6e5;
+}
+
+.help-tab-panel.help-tab-panel-active {
+	display: block;
+}
+
+/* Mobile/Tablet responsive tabs */
+
+#page-wrapper.layout-mobile #tabs-help-section .content-container,
+#page-wrapper.layout-tablet #tabs-help-section .content-container {
+	width: 100%;
+	padding: 0 15px;
+}
+
+#page-wrapper.layout-mobile #tabs-help-section .tabs-title,
+#page-wrapper.layout-tablet #tabs-help-section .tabs-title {
+	font-size: 24px;
+	margin: 0 0 18px 0;
+}
+
+#page-wrapper.layout-mobile #help-tabs-nav,
+#page-wrapper.layout-tablet #help-tabs-nav {
+	margin: 0 0 16px 0;
+}
+
+#page-wrapper.layout-mobile .help-tab-link,
+#page-wrapper.layout-tablet .help-tab-link {
+	display: block;
+	margin: 8px 0;
+	width: 100%;
+}
+
+#page-wrapper.layout-mobile .help-tab-link a,
+#page-wrapper.layout-tablet .help-tab-link a {
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding: 12px 15px;
+}
+
+#page-wrapper.layout-mobile .help-tab-panel,
+#page-wrapper.layout-tablet .help-tab-panel {
+	max-width: 100%;
+	padding: 15px;
+	font-size: 14px;
+}
+
+
+/* 6. CTA SECTION */
+
+#cta-section {
+	margin-top: 40px;
+	padding: 30px 0;
+	background-color: #f8eff6;
+	text-align: center;
+}
+
+.cta-container {
+	width: 900px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+#cta-section p {
+	font-size: 20px;
+	margin-bottom: 15px;
+	color: #2a1422;
+	line-height: 1.6;
+	font-weight: 500;
+	font-family: 'Lexend', Arial, sans-serif;
+}
+
+.cta-subtitle {
+	font-size: 16px;
+	margin-bottom: 30px;
+	color: #644c5c;
+	line-height: 1.6;
+	font-weight: 400;
+	font-family: 'Lexend', Arial, sans-serif;
+}
+
+.cta-button {
+	background-color: #f463b5;
+	color: #ffffff;
+	padding: 14px 32px;
+	text-decoration: none;
+	font-weight: 600;
+	display: inline-block;
+	font-size: 15px;
+	cursor: pointer;
+	font-family: 'Lexend', Arial, sans-serif;
+}
+
+.cta-button:hover {
+	background-color: #d94a9c;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+
+/* 6. FOOTER */
+
+#site-footer {
+	margin-top: 50px;
+	padding: 50px 0;
+	font-size: 13px;
+	color: #644c5c;
+	background-color: #f8eff6;
+	border-top: 1px solid #ead6e5;
+	text-align: center;
+	font-family: 'Lexend', Arial, sans-serif;
+}
+
+.footer-container {
+	width: 900px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.footer-top {
+	margin-bottom: 20px;
+}
+
+.footer-copyright {
+	margin: 0;
+	font-size: 13px;
+	color: #644c5c;
+	line-height: 1.6;
+	font-family: 'Lexend', Arial, sans-serif;
+}
+
+.footer-links {
+	margin-bottom: 20px;
+	padding: 15px 0;
+}
+
+#site-footer a {
+	color: #2a1422;
+	text-decoration: none;
+	margin: 0 12px;
+	font-size: 13px;
+	font-weight: 500;
+	font-family: 'Lexend', Arial, sans-serif;
+}
+
+#site-footer a:hover {
+	color: #f463b5;
+	text-decoration: underline;
+}
+
