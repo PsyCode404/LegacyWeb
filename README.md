@@ -78,7 +78,7 @@ Un accordéon moderne intégralement alimenté par jQuery 1.x :
 
 Aucune animation CSS n'a été utilisée. Tout repose sur la logique JavaScript d'époque, parfaitement optimisée.
 
-### 3. 🧠 Suivi de progression gamifié (mini-IA)
+### 3. 🧠 Suivi de progression 
 
 Pour encourager l'exploration, la FAQ intègre un système de progression intelligent :
 
